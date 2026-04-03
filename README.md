@@ -1296,32 +1296,22 @@ def get_user_with_posts(user_ids):
 
 ### 4.1 新增技能模板
 
-当需要添加新技能时，使用以下模板：
+当需要添加新技能时，使用项目根目录的模板文件 `SKILL_TEMPLATE.md`：
 
 ```markdown
-#### 技能 XX：[技能名称]
-
-**调用指令**：`/[指令名称] [参数]`
-
-**功能说明**：[简要描述技能功能，1-2 句话]
-
-**适用场景**：
-- 场景 1
-- 场景 2
-- 场景 3
-
-**示例输入**：
-```
-/[指令名称] [参数]
-[具体需求描述]
-```
-
-**示例输出**：
-```[语言]
-// 输出代码或分析结果
-```
-
 ---
+name: [Skill Name]
+description: This skill should be used when the user asks to "[trigger phrases]", or needs [what the skill does].
+version: 1.0.0
+---
+
+# [Skill Name]
+
+[Description of what this skill does.]
+...
+```
+
+> **注意**：推荐直接复制 `SKILL_TEMPLATE.md` 文件并根据说明填写内容。
 
 ### 4.2 新增技能示例
 
